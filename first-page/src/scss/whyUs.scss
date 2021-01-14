@@ -1,0 +1,41 @@
+section.why-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  div.why-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-weight: normal;
+      font-size: 2em;
+      padding: 40px;
+    }
+    div.why-us-boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      div.why-us-box {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        padding: 50px;
+        h2 {
+          font-size: 1.2em;
+          font-weight: 800;
+          letter-spacing: 6px;
+          padding: 30px;
+        }
+        p {
+          font-weight: normal;
+          color: $grey;
+          width: 9vw;
+        }
+      }
+    }
+  }
+}

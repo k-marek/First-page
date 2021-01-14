@@ -1,0 +1,45 @@
+section.navi {
+  display: flex;
+  height: 65px;
+  width: 100vw;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px $grey-shadow;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  div.navi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 70vw;
+    a {
+      font-size: 2em;
+      font-weight: light;
+      color: $blue;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    ul a {
+      font-family: $font-alt;
+      font-weight: bold;
+      font-size: 0.8em;
+      color: $grey;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+      border-bottom: 2.5px solid transparent;
+      margin: 0 20px;
+      padding: 1.2vw 10px;
+    }
+    ul a:hover {
+      color: black;
+      border-bottom: 2.5px solid $blue;
+    }
+  }
+}
