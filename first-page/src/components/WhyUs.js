@@ -29,19 +29,23 @@ const WhyUs = () => {
                 <h1>The most popular sale platform in the country</h1>
                 <div className="why-us-boxes">
                     <div className="why-us-box">
-                        <img src={person} alt="daily entries"/>
+                        <div className="entries">
+                          <img src={person} className="entries-img" alt="daily entries"/>
+                        </div>
                         <h2>100000+</h2>
                         <p>daily entries</p>
                     </div>
                     <div className="why-us-box">
-                        <img src={eye} alt="seen products every day"/>
-                        <h2>2000000+</h2>
-                        <p>seen products every day</p>
+                      <div className="seen">
+                          <img src={eye} className="seen-img" alt="seen products every day"/></div>
+                      <h2>2000000+</h2>
+                      <p>seen products every day</p>
                     </div>
                     <div className="why-us-box">
-                        <img src={catalog} alt="added posts daily"/>
-                        <h2>10000+</h2>
-                        <p>added posts daily</p>
+                      <div className="posts">
+                        <img src={catalog} className="posts-img" alt="added posts daily"/></div>
+                      <h2>10000+</h2>
+                      <p>added posts daily</p>
                     </div>
                 </div>
             </div>

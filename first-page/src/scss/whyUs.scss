@@ -22,13 +22,63 @@ section.why-us {
       div.why-us-box {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 50%;
         padding: 50px;
+        div:before {
+          display: flex;
+          flex-direction: column;
+          content: "";
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: $coral;
+          justify-content: flex-end;
+          align-items: center;
+          position: absolute;
+          margin-left: 14px;
+        }
+        img.entries-img {
+          display: flex;
+          align-items: center;
+          padding-left: 42px;
+          padding-top: 5px;
+          position: relative;
+          height: 55px;
+        }
+        div.seen:before {
+          background-color: $blue;
+          margin-left: 25px;
+        }
+        div.posts:before {
+          background-color: $green;
+          margin-left: 20px;
+        }
+
+        img.seen-img {
+          display: flex;
+          align-items: center;
+          padding-left: 45px;
+          padding-top: 10px;
+          position: relative;
+          height: 50px;
+        }
+
+        img.posts-img {
+          display: flex;
+          align-items: center;
+          padding-left: 50px;
+          padding-top: 8px;
+          position: relative;
+          height: 50px;
+        }
+
         h2 {
           font-size: 1.2em;
           font-weight: 800;
           letter-spacing: 6px;
-          padding: 30px;
+          padding: 20px;
         }
         p {
           font-weight: normal;
