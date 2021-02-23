@@ -1,0 +1,135 @@
+section.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 20px;
+  h2 {
+    font-family: $font-base;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 40px;
+  }
+  div.pricing-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 26vw;
+    div.pricing-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 440px;
+      border: solid 1px $coral;
+      border-radius: 20px;
+      position: relative;
+      h3 {
+        font-family: $font-base;
+        font-weight: bold;
+        font-size: 1.3em;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      span {
+        font-family: $font-alt;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: $coral;
+        padding-bottom: 55px;
+      }
+      p {
+        font-family: $font-base;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+      }
+      ul {
+        text-align: center;
+        padding-bottom: 20px;
+
+        li {
+          font-family: $font-alt;
+          font-size: 0.8rem;
+          padding: 10px;
+        }
+        li:before {
+          content: "x";
+          border: 1px solid $coral;
+          border-radius: 2px;
+          color: $coral;
+          text-align: center;
+          font-size: 0.6em;
+          padding: 0 3px;
+          padding-bottom: 1px;
+          margin: 7px;
+          margin-bottom: 2px;
+        }
+        li.li-check:before {
+          content: "✓";
+          border: 1px solid $green;
+          color: $green;
+          padding: 0 2px;
+        }
+      }
+      button {
+        width: 40%;
+        border: 1px solid $coral;
+        border-radius: 20px;
+        background-color: $coral;
+        color: white;
+        font-family: $font-alt;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        top: 0.5vw;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: $grey;
+        border: solid 1px $grey;
+      }
+    }
+    div.pricing-box-2nd {
+      border: solid 1px $blue;
+      box-shadow: 5px 10px 27px $blue-shadow;
+      width: 360px;
+      height: 490px;
+      h3 {
+        position: relative;
+        top: -1.5vw;
+      }
+      span {
+        color: $blue;
+        padding-bottom: 10px;
+        position: relative;
+        top: -1.5vw;
+      }
+      p {
+        position: relative;
+        top: -1.5vw;
+      }
+      button {
+        border: solid 1px $blue;
+        background-color: $blue;
+        position: relative;
+        top: 1.85vw;
+      }
+    }
+    div.pricing-box-3rd {
+      border: solid 1px $green;
+
+      span {
+        color: $green;
+        padding-bottom: 10px;
+      }
+      button {
+        border: solid 1px $green;
+        background-color: $green;
+      }
+    }
+  }
+}
