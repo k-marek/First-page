@@ -5,6 +5,7 @@ import Header from "./Header";
 import WhyUs from "./WhyUs";
 import Benefits from "./Benefits";
 import Pricing from "./Pricing";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <WhyUs/>
       <Benefits/>
       <Pricing/>
+      <Contact/>
     </>
   );
 };
