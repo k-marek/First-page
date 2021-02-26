@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: $light-grey;
+  box-shadow: 0px -5px 40px $grey-shadow;
+  div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    div.footer-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-family: $font-base;
+        font-weight: 300;
+        color: $blue;
+        font-size: 1.6em;
+      }
+      p {
+        font-family: $font-alt;
+        color: $grey;
+        font-size: 0.7em;
+        padding-top: 5px;
+      }
+    }
+    div.footer-social {
+      display: flex;
+      align-items: flex-end;
+      button {
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+        background: url(./../assets/images/Twitter.svg) no-repeat;
+      }
+      button:last-of-type {
+        background: url(./../assets/images/Facebook.svg) no-repeat;
+      }
+    }
+  }
+}

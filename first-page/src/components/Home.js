@@ -6,6 +6,7 @@ import WhyUs from "./WhyUs";
 import Benefits from "./Benefits";
 import Pricing from "./Pricing";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Benefits/>
       <Pricing/>
       <Contact/>
+      <Footer/>
     </>
   );
 };
